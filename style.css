@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.generator {
+  background-color: rgba(255,255,255,0.9);
+  max-width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  width: 30rem;
+}
+
+.generator .header{
+    /* background-image: url("https://img.freepik.com/free-photo/abstract-multi-colored-wave-pattern-shiny-flowing-modern-generated-by-ai_188544-15588.jpg "); */
+    background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80 ");
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.generator .main_body{
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.generator button{
+    border-color: transparent;
+    color: #fff;
+    padding: 10px 12px;
+    font-size: 1.1rem;
+    background-color: #48aef2;
+    border-radius: 20px;
+    margin-top: 1rem;
+    width: 70%;
+}
+.generator button:active{
+    transition: all ease-out 0.1s;
+    box-shadow: 2px 2px 0 black;
+}
+.generator .header h1{
+    font-size: 3rem;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+.generator .main_body #quote{
+  font-family: Montserrat;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.generator .main_body #author{
+  font-family: Montserrat;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+@media (max-width:768px){
+ .generator{
+
+  max-width:90%;
+ }
+}
