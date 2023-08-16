@@ -3,7 +3,7 @@ var quote = document.getElementById("quote")
 var author = document.getElementById("author")
 
 
-async function fetchJoke() {
+async function fetchQuote() {
     console.log("fetching Quote");
     quote.innerText = "Loading..."
     author.innerHTML = ""
@@ -17,7 +17,7 @@ async function fetchJoke() {
 
     var data = await response.json()
 
-    quote.innerText = data[0].quote
+    quote.innerText = `"${data[0].quote}"`
     author.innerHTML = `-<i>${data[0].author}</i>`
 
 }
@@ -25,4 +25,4 @@ async function fetchJoke() {
 
 
 
-generate.addEventListener("click", fetchJoke)
+generate.addEventListener("click", fetchQuote)
